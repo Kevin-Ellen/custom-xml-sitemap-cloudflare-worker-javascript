@@ -1,5 +1,5 @@
 # 👷 What I do
-I serve a page as if I were origin, with the HTTP request headers sent to me shown n the page.
+I normally serve Example.com, but when you go to /sitemap.xml, I serve a custom XML sitemap.
 
 ## Deployment
 * Cloudflare Wrangler
@@ -10,11 +10,10 @@ I serve a page as if I were origin, with the HTTP request headers sent to me sho
 ## Testing
 * Domain: https://user-agent-cookie-cfw-js.croud-testing.workers.dev
 
-1) Open a page on the test domain
-2) Confirm the cookies, especially `Cookie-set`, within the table
-3) Change user-agent to a string containing 'Googlebot' (case insensitive)
-4) Refresh the page
-5) Confirm the cookies, especially `Cookie-set`, within the table
+1) Open a page on the test domain (https://custom-xml-sitemap-cloudflare-worker-javascript.croud-testing.workers.dev/)
+2) Confirm you see example.com's content
+3) Navigate to https://custom-xml-sitemap-cloudflare-worker-javascript.croud-testing.workers.dev/sitemap.xml
+4) Confirm the XML sitemap is shown
 
 ## Documentation
 * Cloudflare Workers: https://developers.cloudflare.com/workers/

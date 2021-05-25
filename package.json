@@ -1,8 +1,8 @@
 {
   "private": true,
-  "name": "user-agent-cookie-cfw-js",
+  "name": "custom-xml-sitemap-cloudflare-worker-javascript",
   "version": "1.0.0",
-  "description": "Cloudflare Worker sets a cookie based on the UA.",
+  "description": "Custom XML sitemap served using Cloudflare Workers - with a list of URLs within the repo as source.",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
